@@ -17,12 +17,26 @@ body {
 }
 
 /* utils */
+.container{
+  width: 1360px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
+}
+
+a{
+  display: block;
+}
+p, h1, h2, h3{
+  margin: 0;
 }
 
 .visually-hidden {
@@ -48,7 +62,7 @@ body {
 
 .logo{
 
-   font-size: 35px;
+  font-size: 35px;
   line-height: 1.21;
   color: var(--secondary-text-color);
 }
@@ -86,7 +100,6 @@ color: var(--accent-color);
 
 }
 
-
 .button{
   padding: 10px 30px;
 font-family: inherit;
@@ -97,6 +110,7 @@ font-family: inherit;
   background-color: var(--accent-color);
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 /* about */
@@ -112,4 +126,108 @@ font-family: inherit;
 .about-text {
     line-height: 1.56;
     text-align: center;
+}
+
+/* posts */
+
+.posts {
+}
+
+.posts-box {
+  display: inline-flex;
+  padding: 110px 30px;
+  width: 50%;
+  
+  display: inline-block;
+  background-color:  #0284D0;
+}
+.posts__date {
+  font-size: 20px;
+  line-height: 1.65;
+  margin-bottom: 5px;
+
+  color: var(--primary-white-color);
+}
+
+.posts__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 25px;
+  margin-bottom: 25px;
+
+  color: var(--primary-white-color);
+}
+
+.posts__text {
+  line-height: 1.56;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
+.button--green {
+  background-color: #0284D0;
+  border: 1px solid var(--primary-white-color);
+  margin-bottom: ;
+}
+
+.posts__image{
+  display: inline-block;
+  width:50%;
+}
+
+/* team */
+
+.team {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.team__text {
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+.team__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+.team__subtitle {
+  line-height: 1.56;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+.team-list {
+}
+
+.list {
+}
+
+.team-list__item {
+}
+
+.list-actions {
+}
+
+.list-actions__item {
+}
+
+.list-actions__link {
+}
+
+.link {
+}
+
+.list-actions__icon {
 }
