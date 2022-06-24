@@ -35,6 +35,12 @@ body {
 a{
   display: block;
 }
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
 p, h1, h2, h3{
   margin: 0;
 }
@@ -169,12 +175,6 @@ font-family: inherit;
 .button--green {
   background-color: #0284D0;
   border: 1px solid var(--primary-white-color);
-  margin-bottom: ;
-}
-
-.posts__image{
-  display: inline-block;
-  width:50%;
 }
 
 /* team */
