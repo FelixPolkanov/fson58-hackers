@@ -22,7 +22,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-   margin-right: auto;
+  margin-right: auto;
   outline: 1px solid red;
 }
 
@@ -66,8 +66,6 @@ p, h1, h2, h3{
   background-color: #5e5e5e;
 }
 
-
-
 .logo{
 
   font-size: 35px;
@@ -79,15 +77,14 @@ p, h1, h2, h3{
   margin-right: 10px;
 }
 
-
 .accent{
 
 color: var(--accent-color);
 }
 
 .header-nav-link{
-        line-height: 1.56;
-        color: var(--secondary-text-color);
+  line-height: 1.56;
+  color: var(--secondary-text-color);
 }
 
 /* hero */
@@ -139,16 +136,22 @@ font-family: inherit;
 /* posts */
 
 .posts {
+
+}
+
+.posts__img{
+  display: inline-block;
+  width: 50%;
 }
 
 .posts-box {
-  display: inline-flex;
+  display: inline-block;
   padding: 110px 30px;
   width: 50%;
   
-  display: inline-block;
   background-color:  #0284D0;
 }
+
 .posts__date {
   font-size: 20px;
   line-height: 1.65;
@@ -191,8 +194,6 @@ font-family: inherit;
   line-height: 1.65;
   text-align: center;
   margin-bottom: 16px;
-
- 
 }
 
 .team__title {
@@ -211,25 +212,22 @@ font-family: inherit;
 
 .team-list {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .team-list__item {
-  padding-bottom: 60px;
   display: flex;
   text-align: center;
   flex-direction: column;
 }
+
 .team-list__item + .team-list__item{
-  margin-left: 15px;
-}
-
-
-.team-list__icon{
-  position: relative;
+  margin-left: 35px;
 }
 
 .team-list__box{
-padding-bottom: 12px;
+padding-bottom: 60px;
 padding-top: 15px ;
 }
 
@@ -244,6 +242,17 @@ padding-top: 15px ;
   line-height: 1.56;
 }
 
+.card{
+  position: relative;
+}
+
+/* .card:hover,
+.card:focus{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6),
+   rgba(0, 0, 0, 0.6)), url(.jpg);
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+} */
+
 .list-actions {
   position: absolute;
   top: 50%;
@@ -252,7 +261,7 @@ padding-top: 15px ;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0;
 }
 
 .list-actions__icon +.list-actions__icon{
@@ -260,6 +269,12 @@ padding-top: 15px ;
 }
 
 .list-actions__item {
+  display: flex;
+  align-items: center
+}
+
+.list-actions__item:not(:last-child){
+    margin-right: 25px;
 }
 
 .list-actions__link {
@@ -269,5 +284,5 @@ padding-top: 15px ;
 }
 
 .list-actions__icon {
-  fill: ;
+ 
 }
