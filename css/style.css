@@ -33,6 +33,7 @@ body {
 .list {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 a{
@@ -47,9 +48,7 @@ img{
 
 p, h1, h2, h3{
   margin: 0;
-}
-
-li, 
+} 
 
 .visually-hidden {
   position: absolute;
@@ -111,7 +110,7 @@ color: var(--accent-color);
 
 .button{
   padding: 10px 30px;
-font-family: inherit;
+  font-family: inherit;
   font-size: 18px;
   line-height: 1.56;
    /* text-align: center; */
@@ -188,7 +187,6 @@ font-family: inherit;
 
 .team{
   padding-top: 50px;
-  padding-bottom: 60px;
 }
 
 .team__text {
@@ -215,10 +213,9 @@ font-family: inherit;
 .card-list {
   display: flex;
   margin: -15px;
-  padding: 0;
 }
 
-.csrd-list__item {
+.card-list__item {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -228,8 +225,8 @@ font-family: inherit;
 }
 
 .card-list__box{
-padding-bottom: 60px;
-padding-top: 15px ;
+  padding-bottom: 60px;
+  padding-top: 15px ;
 }
 
 .card-list__title{
@@ -247,12 +244,17 @@ padding-top: 15px ;
   position: relative;
 }
 
-/* .card:hover,
+.card:hover,
 .card:focus{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6),
-   rgba(0, 0, 0, 0.6)), url(.jpg);
+   rgba(0, 0, 0, 0.6));
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
-} */
+}
+
+.card:hover .card-actions,
+.card:focus .card-actions {
+  opacity: 1;
+}
 
 .card-actions {
   position: absolute;
@@ -262,16 +264,14 @@ padding-top: 15px ;
 
   display: flex;
   align-items: center;
-  padding: 0;
-}
-
-.card-actions__icon +.card-actions__icon{
-  margin-left: 25px;
+  justify-content: center;
+  
+  opacity: 0;
 }
 
 .card-actions__item {
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .card-actions__item:not(:last-child){
@@ -279,8 +279,10 @@ padding-top: 15px ;
 }
 
 .card-actions__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-actions__icon {
- 
 }
