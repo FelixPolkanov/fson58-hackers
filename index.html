@@ -1,278 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Finance Ledger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Finance Ledger</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <div class="container">
+    <header class="header">
+      <a class="logo link" href="./index.html"
+        ><img class="logo-img" src="./images/logo.svg" alt="logo" /><span class="accent"
+          >Finance</span
+        >Ledger</a>
+      <nav class="header-nav">
+        <ul class="header-nav-list list">
+          <li class="header-nav-item"><a class="header-nav-link link" href="">Home</a></li>
+          <li class="header-nav-item"><a class="header-nav-link link" href="">About</a></li>
+          <li class="header-nav-item"><a class="header-nav-link link" href="">Cases</a></li>
+          <li class="header-nav-item"><a class="header-nav-link link" href="">Blog</a></li>
+          <li class="header-nav-item"><a class="header-nav-link link" href="">Contact</a></li>
+        </ul>
+      </nav>
+    
+    </header>
 
-<body>
-  <header class="header">
-    <a class="logo link" href="./index.html"><img class="logo-img" src="./images/logo.svg" alt="logo" /><span
-        class="accent">Finance</span>
-      Ledger</a>
-    <nav class="header-nav">
-      <ul class="header-nav-list list">
-        <li class="header-nav-item"><a class="header-nav-link link" href="">Home</a></li>
-        <li class="header-nav-item"><a class="header-nav-link link" href="">About</a></li>
-        <li class="header-nav-item"><a class="header-nav-link link" href="">Cases</a></li>
-        <li class="header-nav-item"><a class="header-nav-link link" href="">Blog</a></li>
-        <li class="header-nav-item"><a class="header-nav-link link" href="">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- main -->
-  <main>
-    <!-- hero -->
-    <section class="hero">
-      <h1 class="hero-title">The Sky Is The Limit</h1>
-      <p class="hero-description">We provide world class financial assistance</p>
-      <button class="button" type="button">Read More</button>
-    </section>
-
-    <!-- Section about -->
-
-    <section class="about">
-      <h2 class="visually-hidden">About us</h2>
-      <ul class="about-list list">
-        <li class="about-item">
-          <h3 class="about-subtitle">Investmant Banking</h3>
-          <p class="about-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
-          </p>
-        </li>
-
-        <li class="about-item">
-          <h3 class="about-subtitle">Portfolio Manager</h3>
-          <p class="about-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
-          </p>
-        </li>
-
-        <li class="about-item">
-          <h3 class="about-subtitle">Tax & Custudio</h3>
-          <p class="about-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- solutions -->
-
-    <section>
-      <img src="./images/solutions/solutions.jpg" alt="team" />
-      <p>What you are looking for</p>
-      <h2>We provide bespoke solutions</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
-        quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
-        itaque rerum temporibus doloribus iste maiores deleniti?
-      </p>
-      <button type="button">Read More</button>
-    </section>
-
-    <!-- cases-->
-
-    <section class="cases">
-      <p>This is what we do</p>
-      <h2>Business Cases</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-      <ul>
-        <li><img src="./images/cases/cases-1.jpg" alt="" /></li>
-        <li><img src="./images/cases/cases-2.jpg" alt="" /></li>
-        <li><img src="./images/cases/cases-3.jpg" alt="" /></li>
-        <li><img src="./images/cases/cases-4.jpg" alt="" /></li>
-        <li><img src="./images/cases/cases-5.jpg" alt="" /></li>
-        <li><img src="./images/cases/cases-6.jpg" alt="" /></li>
-        <li><img src="./images/cases/cases-7.jpg" alt="" /></li>
-        <li><img src="./images/cases/cases-8.jpg" alt="" /></li>
-      </ul>
-    </section>
-
-    <!-- posts -->
-
-    <section class="posts">
-      <div class="container post-boxes">
-        <div class="posts-box">
-          <p class="posts__date">April 16 2020</p>
-          <h2 class="posts__title">Blog Post One</h2>
-          <p class="posts__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
-            ipsum dignissimos quae laudantium asperiores nam
-            aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus
-            doloribus iste maiores deleniti?</p>
-          <button class="button button--green">Read Our Blog</button>
-        </div>
-        <img src="./images/posts/post1.jpg" alt="desktop" class="posts__img">
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <h1 class="hero-title">The Sky Is The Limit</h1>
+        <p class="hero-description">We provide world class financial assistance</p>
+        <div class="hero-button-place">
+        <button class="button" type="button">Read More</button>
       </div>
-    </section>
+      </section>
+</div>
 
-    <!-- team -->
 
-    <section class="team">
-      <div class="container">
-        <p class="team__text">Who we are</p>
-        <h2 class="team__title">Our Professional Team</h2>
-        <p class="team__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-        <ul class="card-list list">
+      <!-- Section about -->
 
-          <li class="card-list__item">
-            <div class="card">
-              <img src="./images/team/john.jpg" alt="employee" width="420">
-              <ul class="list card-actions">
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#fs"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#tw"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#you"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#lin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-list__box">
-              <h3 class="card-list__title">John Doe</h3>
-              <p class="-list__subtitle">President</p>
-            </div>
-
+      <section class="container about">
+        <h2 class="visually-hidden">About us</h2>
+        <ul class="about-list list">
+          <li class="about-item">
+            <h3 class="about-subtitle">Investmant Banking</h3>
+            <p class="about-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
+            </p>
           </li>
 
-          <li class="card-list__item">
-            <div class="card">
-              <img src="./images/team/jane.jpg" alt="employee" width="420">
-              <ul class="list card-actions">
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#fs"></use>
-                    </svg>
-                  </a>
-                </li>
-            
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#tw"></use>
-                    </svg>
-                  </a>
-                </li>
-            
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#you"></use>
-                    </svg>
-                  </a>
-                </li>
-            
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#lin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-list__box">
-              <h3 class="card-list__title">Jane Doe</h3>
-              <p class="-list__subtitle">Vice President</p>
-            </div>
-
+          <li class="about-item">
+            <h3 class="about-subtitle">Portfolio Manager</h3>
+            <p class="about-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
+            </p>
           </li>
 
-          <li class="card-list__item">
-            <div class="card">
-              <img src="./images/team/steve.jpg" alt="employee" width="420">
-              <ul class="list card-actions">
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#fs"></use>
-                    </svg>
-                  </a>
-                </li>
-            
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#tw"></use>
-                    </svg>
-                  </a>
-                </li>
-            
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#you"></use>
-                    </svg>
-                  </a>
-                </li>
-            
-                <li class="card-actions__item">
-                  <a href="" class="card-actions__link link">
-                    <svg class="card-actions__icon" width="35" height="35">
-                      <use href="./images/defs.svg#lin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-list__box">
-              <h3 class="card-list__title">Steve Smith</h3>
-              <p class="-list__subtitle">Marketing Head</p>
-            </div>
-
+          <li class="about-item">
+            <h3 class="about-subtitle">Tax & Custudio</h3>
+            <p class="about-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
+            </p>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
+      <!-- solutions -->
 
-  </main>
-</body>
+      <section>
+        <img src="./images/solutions/solutions.jpg" alt="team" />
+        <p>What you are looking for</p>
+        <h2>We provide bespoke solutions</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+          quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+          itaque rerum temporibus doloribus iste maiores deleniti?
+        </p>
+        <button type="button">Read More</button>
+      </section>
 
+      <!-- cases-->
+
+      <section class="cases">
+        <p>This is what we do</p>
+        <h2>Business Cases</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
+        <ul class="list">
+          <li ><img src="./images/cases/cases-1.jpg" alt="" /></li>
+          <li><img src="./images/cases/cases-2.jpg" alt="" /></li>
+          <li><img src="./images/cases/cases-3.jpg" alt="" /></li>
+          <li><img src="./images/cases/cases-4.jpg" alt="" /></li>
+          <li><img src="./images/cases/cases-5.jpg" alt="" /></li>
+          <li><img src="./images/cases/cases-6.jpg" alt="" /></li>
+          <li><img src="./images/cases/cases-7.jpg" alt="" /></li>
+          <li><img src="./images/cases/cases-8.jpg" alt="" /></li>
+        </ul>
+      </section>
+
+      <!-- posts -->
+
+      <section class="posts">
+        <div class="container post-boxes">
+          <div class="posts-box">
+            <p class="posts__date">April 16 2020</p>
+            <h2 class="posts__title">Blog Post One</h2>
+            <p class="posts__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <button class="button button--green">Read Our Blog</button>
+          </div>
+          <img src="./images/posts/post1.jpg" alt="desktop" class="posts__img" />
+        </div>
+      </section>
+
+      <!-- team -->
+
+      <section class="team">
+        <div class="container">
+          <p class="team__text">Who we are</p>
+          <h2 class="team__title">Our Professional Team</h2>
+          <p class="team__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="card-list list">
+            <li class="card-list__item">
+              <div class="card">
+                <img src="./images/team/john.jpg" alt="employee" width="420" />
+                <ul class="list card-actions">
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#fs"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#tw"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#you"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#lin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-list__box">
+                <h3 class="card-list__title">John Doe</h3>
+                <p class="-list__subtitle">President</p>
+              </div>
+            </li>
+
+            <li class="card-list__item">
+              <div class="card">
+                <img src="./images/team/jane.jpg" alt="employee" width="420" />
+                <ul class="list card-actions">
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#fs"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#tw"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#you"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#lin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-list__box">
+                <h3 class="card-list__title">Jane Doe</h3>
+                <p class="-list__subtitle">Vice President</p>
+              </div>
+            </li>
+
+            <li class="card-list__item">
+              <div class="card">
+                <img src="./images/team/steve.jpg" alt="employee" width="420" />
+                <ul class="list card-actions">
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#fs"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#tw"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#you"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/defs.svg#lin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-list__box">
+                <h3 class="card-list__title">Steve Smith</h3>
+                <p class="-list__subtitle">Marketing Head</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
