@@ -63,10 +63,15 @@
 
       <!-- Section about -->
 
-      <section class="container about">
+      <section class="container">
         <h2 class="visually-hidden">About us</h2>
         <ul class="about-list list">
           <li class="about-item">
+            <div class="about-icon-place about-icon">
+            <svg  width="33" height="31">
+                  <use href="./images/defs.svg#icon-Vector-2"></use>
+            </svg>
+          </div >
             <h3 class="about-subtitle">Investmant Banking</h3>
             <p class="about-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
@@ -74,6 +79,11 @@
           </li>
 
           <li class="about-item">
+            <div class="about-icon-place about-icon">
+            <svg width="35" height="35">
+                  <use href="./images/defs.svg#icon-Vector-1"></use>
+            </svg>
+          </div >
             <h3 class="about-subtitle">Portfolio Manager</h3>
             <p class="about-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
@@ -81,6 +91,11 @@
           </li>
 
           <li class="about-item">
+            <div class="about-icon-place about-icon">
+            <svg  width="35" height="35">
+                  <use href="./images/defs.svg#icon-Vector"></use>
+            </svg>
+          </div >
             <h3 class="about-subtitle">Tax & Custudio</h3>
             <p class="about-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
@@ -91,33 +106,37 @@
 
       <!-- solutions -->
 
-      <section>
+      <section class="container">
+        <div class="solutions-container">
         <img src="./images/solutions/solutions.jpg" alt="team" />
-        <p>What you are looking for</p>
-        <h2>We provide bespoke solutions</h2>
-        <p>
+        <div class="solutions">
+        <p class="solutions-pre-title">What you are looking for</p>
+        <h2 class="solutions-title">We provide bespoke solutions</h2>
+        <p class="solutions-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
           quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
           itaque rerum temporibus doloribus iste maiores deleniti?
         </p>
-        <button type="button">Read More</button>
+        <button type="button" class="solutions-button">Read More</button>
+      </div>
+      </div>
       </section>
 
       <!-- cases-->
 
-      <section class="cases">
-        <p>This is what we do</p>
-        <h2>Business Cases</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-        <ul class="list">
-          <li ><img src="./images/cases/cases-1.jpg" alt="" /></li>
-          <li><img src="./images/cases/cases-2.jpg" alt="" /></li>
-          <li><img src="./images/cases/cases-3.jpg" alt="" /></li>
-          <li><img src="./images/cases/cases-4.jpg" alt="" /></li>
-          <li><img src="./images/cases/cases-5.jpg" alt="" /></li>
-          <li><img src="./images/cases/cases-6.jpg" alt="" /></li>
-          <li><img src="./images/cases/cases-7.jpg" alt="" /></li>
-          <li><img src="./images/cases/cases-8.jpg" alt="" /></li>
+      <section class="container cases">
+        <p class="cases-pre-title">This is what we do</p>
+        <h2 class="cases-title">Business Cases</h2>
+        <p class="cases-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
+        <ul class="list cases-cards">
+          <li class="item"><img src="./images/cases/cases-1.jpg" alt="" /></li>
+          <li class="item"><img src="./images/cases/cases-2.jpg" alt="" /></li>
+          <li class="item"><img src="./images/cases/cases-3.jpg" alt="" /></li>
+          <li class="item"><img src="./images/cases/cases-4.jpg" alt="" /></li>
+          <li class="item"><img src="./images/cases/cases-5.jpg" alt="" /></li>
+          <li class="item"><img src="./images/cases/cases-6.jpg" alt="" /></li>
+          <li class="item"><img src="./images/cases/cases-7.jpg" alt="" /></li>
+          <li class="item"><img src="./images/cases/cases-8.jpg" alt="" /></li>
         </ul>
       </section>
 
@@ -141,8 +160,8 @@
 
       <!-- team -->
 
-      <section class="team">
-        <div class="container">
+      <section>
+        <div class="container team ">
           <p class="team__text">Who we are</p>
           <h2 class="team__title">Our Professional Team</h2>
           <p class="team__subtitle">
@@ -282,6 +301,28 @@
           </ul>
         </div>
       </section>
+
+        <!-- REQUEST -->
+<section class="container">
+       <div class="request-container">
+      <img src="./images/request/request.jpg" alt="request" />
+        <div class="request">
+         <h2 class="request-title">Request Callback</h2>
+     <form class="">
+      <div>
+<input type="name" placeholder="Enter your name" class="field-name" >
+      </div>
+        <div>
+      <input type="email" placeholder="Enter email*" autocomplete="on" class="field-email" >
+    </div>
+      <button type="submit" class="send-button">Send</button>
+      </form>
+      </div> 
+    </div>     
+</section>
+
+
+ 
     </main>
   </body>
 </html>

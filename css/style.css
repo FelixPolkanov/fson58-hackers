@@ -18,7 +18,7 @@ body {
 
 /* utils */
 .container{
-  width: 1360px;
+  width: 1390px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -70,8 +70,8 @@ p, h1, h2, h3{
   align-items: center;
     padding-top: 11px;
     margin-bottom: 255px;
-    padding-left: 35px;
-  padding-right: 31px;
+    padding-left: 50px;
+  padding-right: 46px;
   background-color: #5e5e5e;
 }
 
@@ -134,7 +134,7 @@ margin-bottom: 29px;
   display: flex;
   padding: 10px 30px;
   font-family: inherit;
-    font-size: 18px;
+  font-size: 18px;
   line-height: 1.56;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
@@ -150,28 +150,139 @@ margin-bottom: 29px;
 
 /* about */
 .about-list{
-  padding-bottom: 19px;
-display: flex;
-outline: 1px solid gold;
-
+  display: flex;
+  padding-left:66px;
+  padding-right: 66px;
+  justify-content: space-between;
+ padding-top: 40px;
+padding-bottom: 19px;
 }
 .about-item{
- 
+width: 362px;
 outline: 1px solid rgb(81, 0, 255);
 }
+
 .about-subtitle {
   margin-bottom: 16px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.65;
-    text-align: center;
-   
+    text-align: center;  
 }
 
 .about-text {
     line-height: 1.56;
     text-align: center;
 }
+
+/* стили SVG для  секции about */
+.about-icon{
+margin-left: auto;
+margin-right: auto;
+  width: 67px;
+  height: 67px;
+  fill: var(--secondary-text-color);
+  background-color: #28A745;
+  border-radius: 33.5px;
+  
+}
+.about-icon-place{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* стили секции solutions */
+.solutions-container{
+display: flex;
+}
+.solutions{
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 30px;
+  background: #28A745;
+  border-radius: 0px;
+}
+.solutions-pre-title{
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 1.65;
+  color: var(--secondary-text-color);
+}
+
+.solutions-title{
+  margin-bottom: 26px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  color: var(--secondary-text-color);
+
+}
+.solutions-text{
+padding-right: 44px;
+margin-bottom: 17px;
+/* width: 606px; */
+line-height: 1.56;
+color: var(--secondary-text-color);
+}
+.solutions-button{
+width: 167px;
+  height: 50px;
+  left: 710px;
+  top: 1369px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+
+/* стили секции cases */
+.cases{
+  padding-top: 50px;
+  padding-bottom: 48px;
+  background-color: rgb(200, 182, 199);
+}
+.cases-pre-title{
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  }
+
+.cases-title {
+  margin-bottom: 34px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  text-align: center;
+   }
+  .cases-text{
+    margin-bottom: 39px;
+    line-height: 1.56;
+    text-align: center;
+  }
+  /* сетка карточек cases */
+.cases-cards{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  margin-left: -8px;
+  margin-top: -7px;
+  background-color: rgb(88, 95, 185);
+}
+
+.cases-cards .item{
+   margin-left: 8px;
+  margin-top: 7px;
+  flex-basis: calc((100% - 64px) / 4);
+  outline: 1px solid rgb(218, 215, 227);
+}
+
+
 
 /* posts */
 
@@ -256,7 +367,6 @@ outline: 1px solid rgb(81, 0, 255);
   display: flex;
   text-align: center;
   flex-direction: column;
-
   margin: 15px;
   flex-basis: calc((100% - 30px * 3) / 3);
 }
@@ -323,3 +433,44 @@ outline: 1px solid rgb(81, 0, 255);
 
 .card-actions__icon {
 }
+
+ /* стили секции request */
+ .request-container{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .request{
+  text-align: center;
+   width: 680px;
+  padding-top: 78px;
+  padding-bottom: 82px;
+background-color: #F4F4F4;
+ }
+.request-title{
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 34px;
+ }
+.field-name{
+  width: 620px;
+  height: 40px;
+  margin-bottom: 36px;
+ 
+}
+.field-email {
+  width: 620px;
+  height: 40px;
+  margin-bottom: 60px;
+}
+ .send-button{
+ width: 620px;
+  height: 42px;
+  border-radius: 5px;
+  border-color: #28A745;
+  line-height: 1.39;
+  text-align: center;
+  color: #FFFFFF;
+background-color: #28A745;
+ }
