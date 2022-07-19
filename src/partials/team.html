@@ -11,7 +11,14 @@
                   <!-- Первая карточка -->
       <li class="card-list__item">
         <div class="card">
-          <img src="./images/team/john.jpg" alt="employee" width="420" />
+          <picture>
+            <source srcset="./images/team/john-420.webp 420w, 
+                            ./images/team/john-420@2x.webp 840w" type="image/webp"
+              sizes="(min-width: 768px) 33vw, 100vw">
+            <img srcset="./images/team/john-420.jpg 420w, 
+                          ./images/team/john-420@2x.jpg 840w"
+              sizes="(min-width: 768px) 33vw, 100vw" src="./images/team/john-420.jpg" alt="employee" width="420">
+          </picture>
           <ul class="list card-actions">
             <li class="card-actions__item">
               <a href="#" class="card-actions__link link">
@@ -55,7 +62,14 @@
               <!-- Вторая карточка -->
       <li class="card-list__item">
         <div class="card">
-          <img src="./images/team/jane.jpg" alt="employee" width="420" />
+          <picture>
+            <source srcset="./images/team/jane-420.webp 420w, 
+                            ./images/team/jane-420@2x.webp 840w" type="image/webp" 
+                    sizes="(min-width: 768px) 33vw, 100vw">
+            <img srcset="./images/team/jane-420.jpg 420w, 
+                        ./images/team/jane-420@2x.jpg 840w" sizes="(min-width: 768px) 33vw, 100vw"
+              src="./images/team/jane-420.jpg" alt="employee" width="420">
+          </picture>
           <ul class="list card-actions">
             <li class="card-actions__item">
               <a href="" class="card-actions__link link">
@@ -99,7 +113,14 @@
                 <!-- Третья карточка -->
       <li class="card-list__item">
         <div class="card">
-          <img src="./images/team/steve.jpg" alt="employee" width="420" />
+          <picture>
+            <source srcset="./images/team/steve-420.webp 420w, 
+                            ./images/team/steve-420@2x.webp 840w" type="image/webp" 
+                      sizes="(min-width: 768px) 33vw, 100vw">
+            <img srcset="./images/team/steve-420.jpg 420w, 
+                        ./images/team/steve-420@2x.jpg 840w" sizes="(min-width: 768px) 33vw, 100vw"
+              src="./images/team/steve-420.jpg" alt="employee" width="420">
+          </picture>
           <ul class="list card-actions">
             <li class="card-actions__item">
               <a href="" class="card-actions__link link">
