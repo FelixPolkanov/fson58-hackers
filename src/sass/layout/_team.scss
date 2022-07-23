@@ -3,126 +3,134 @@
   padding-bottom: 50px;
   text-align: center;
 
-&__text {
-  margin-bottom: 16px;
-  line-height: 1.66;
+  &__text {
+    margin-bottom: 16px;
+    line-height: 1.66;
 
-  @media screen and (min-width: $tablet) {
-    font-size: 20px;
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+    }
   }
-}
 
-&__title {
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.263;
-  margin-bottom: 34px;
-  
-}
+  &__title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.263;
+    margin-bottom: 34px;
+  }
 
-&__subtitle {
-  font-size: 16px;
-  line-height: 1.62;
-  margin-bottom: 37px;
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.62;
+    margin-bottom: 37px;
 
-  @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       font-size: 17px;
       line-height: 1.65;
       margin-bottom: 50px;
     }
 
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 1.55;
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 1.55;
     }
+  }
 }
-}
-
 
 .card-list {
   @media screen and (min-width: $tablet) {
-      display: flex;
-      margin: -25px;
-    }
-  
+    display: flex;
+    margin: -10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: -25px;
+  }
 
   &__item {
-    @media screen and (max-width: 329px) {
-        &:not(:last-child){
-          margin-bottom: 10px;
-        }
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
       }
+    }
 
     @media screen and (min-width: $tablet) {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        margin: 25px;
-        // flex-basis: calc((100% - 50px * 2) / 3);
-        flex-basis: 33.333%;
-      }
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin: 10px;
+      flex-basis: calc((100% - 10px * 2) / 3);
     }
-  
-    &__box {
-      padding-top: 15px;
+
+    @media screen and (min-width: $desktop) {
+      margin: 25px;
+      flex-basis: calc((100% - 25px * 2) / 3);
     }
-  
-    &__title {
-      font-weight: 400;
-      font-size: 23px;
-      line-height: 1.26;
-      margin-bottom: 12px;
-  
-      @media screen and (min-width: $tablet) {
-        font-size: 25px;
-      }
+  }
+
+  &__box {
+    padding-top: 15px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.26;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 25px;
     }
-  
-    &__subtitle {
-      font-size: 16px;
-      line-height: 1.62;
-  
-      @media screen and (min-width: $tablet) {
-        font-size: 18px;
-        line-height: 1.55;
-      }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.62;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 18px;
+      line-height: 1.55;
     }
+  }
 }
-
-
 
 .card {
   position: relative;
 
-  &:hover,
-  &:focus {
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  &:hover .overlay,
+  &:focus .overlay {
+    opacity: 1;
+  }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
-  background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/team/jane-420.jpg);
-}
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
 
-  &:hover .card-actions,
-  &:focus .card-actions {
-  opacity: 1;
-}
+  opacity: 0;
 
-transition: box-shadow 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
-
 
 .card-actions {
+  &.card--absolut{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  }
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  opacity: 0;
-
-  // transition: translate 2000ms ease-in-out;
 
   &__item {
     display: flex;
@@ -138,6 +146,11 @@ transition: box-shadow 250ms ease-in-out;
     align-items: center;
     justify-content: center;
   }
+
+  &__icon {
+    @media screen and (max-width: 1389px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
-
-
