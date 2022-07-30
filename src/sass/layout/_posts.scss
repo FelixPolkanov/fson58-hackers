@@ -60,13 +60,6 @@
   }
 }
 
-.img-post{
-  @media screen and (min-width: $tablet) {
-      width: 50%;
-      order: 2;
-    }
-}
-
 .button--green {
   background-color: #0284d0;
   border: 1px solid var(--primary-white-color);

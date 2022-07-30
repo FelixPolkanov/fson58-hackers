@@ -7,14 +7,14 @@
   outline: 1px solid red;
 
 @media screen and (min-width: $mobile) {
-    max-width: 310px;
+    max-width: 320px;
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 742px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: 1334px;
+    max-width: 1360px;
   }
 }
