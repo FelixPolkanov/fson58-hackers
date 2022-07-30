@@ -1,10 +1,14 @@
 .header {
   padding-top: 20px;
-  // background-color: #5e5e5e;
+  padding-bottom: 20px;
   position: fixed;
   width: 100%;
 
   z-index: 1;
+
+  &__scroll {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
 
   & .container {
     padding-left: 50px;
