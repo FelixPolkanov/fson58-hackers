@@ -34,11 +34,9 @@
   }
 
   &-button {
-    width: 167px;
-    height: 50px;
+    @extend .button;
 
-    border: 1px solid #ffffff;
-    border-radius: 5px;
+    border: 1px solid var(--primary-white-color);
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
   }
