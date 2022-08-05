@@ -5,7 +5,7 @@
   "homepage": "https://FelixPolkanov.github.io/fson58-hackers",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url/fson58-hackers/"
+    "build": "parcel build src/*.html --public-url /fson58-hackers/"
   },
   "repository": {
     "type": "git",
